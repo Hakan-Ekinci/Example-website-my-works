@@ -1,0 +1,196 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --primary: #ed6809;
+        --primary-dark: #9c4608;
+        --text: #111;
+    }
+    
+    body {
+        margin: 0;
+        font-family: "Segoe UI";
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--text);
+    }
+    
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    
+    .logoContainer {
+        font-size: 2.5em;
+        color: var(--primary);
+        font-weight: bold;
+        padding: 25px 0;
+    }
+    
+    nav {
+        background-color: #eee;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    nav>div.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+    
+    nav ul a {
+        display: block;
+        padding: 12px 20px;
+    }
+    
+    nav ul li.aktif a {
+        background-color: var(--primary);
+        color: white;
+    }
+    
+    #guthaben {
+        font-size: 1.1em;
+    }
+    /*===================MAIN=====================*/
+    
+    main {
+        margin-bottom: 100px;
+    }
+    
+    main .container {
+        display: flex;
+        padding-top: 25px;
+    }
+    
+    main .inhalt {
+        width: 70%;
+    }
+    
+    aside {
+        width: 27%;
+        border: 1px solid #eee;
+        margin-top: 70px;
+        box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.34);
+        margin-left: 3%;
+        padding: 15px 35px;
+    }
+    
+    aside>h3 {
+        text-align: center;
+    }
+    
+    .inhalt>h1 {
+        height: 70px;
+        margin: 0;
+    }
+    
+    .produkte {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card {
+        width: 32%;
+        border: 1px solid #eee;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.34);
+    }
+    
+    .card>span {
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--text);
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1pxsolid #eee;
+    }
+    
+    .card .bild {
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card .bild img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .info {
+        display: flex;
+        background-color: #ececec;
+    }
+    
+    .info>* {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
+    }
+    
+    .info .links {
+        border-right: 1px solid #ccc;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--primary);
+    }
+    
+    .info .rechts button {
+        padding: 9px 16px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        background-color: var(--primary);
+        color: white;
+        cursor: pointer;
+    }
+    
+    .info .rechts button:hover {
+        background-color: var(--primary-dark);
+    }
+    
+    #warenkorb div {
+        margin-bottom: 10px;
+    }
+    
+    aside>button {
+        padding: 9px 16px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        background-color: var(--primary);
+        color: white;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    aside>button:hover {
+        background-color: var(--primary-dark);
+    }
+    
+    #gesamtKosten {
+        margin: 15px 0;
+    }
+    
+    #meldung {
+        margin-top: 15px;
+        padding: 10px;
+        color: white;
+    }

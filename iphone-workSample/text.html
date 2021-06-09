@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+
+<body>
+    <header> 
+        <div class="logoContainer container">
+            Sample Site
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li class="aktiv"><a href="">SHOP</a></li>
+                    <li><a href="">ÜBER UNS</a></li>
+                    <li><a href="">KONTAKT</a></li>
+                </ul>
+                <span id="guthaben">
+                    Guthaben: <b>2.000 €</b>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="inhalt">
+                <h1>TOP SELLER</h1>
+                <div class="produkte">
+                    <div class="card">
+                        <span>iphone 12</span>
+                        <div class="bild">
+                            <img src="iphone.jpg">
+                        </div>
+                        <div class="info">
+                            <div class="links">
+                                1000,- €
+                            </div>
+                            <div class="rechts">
+                                <button onclick="hinzufuegen('iPhone 12', 1000);">HINZUFÜGEN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>iphone 12</span>
+                        <div class="bild">
+                            <img src="iphone.jpg">
+                        </div>
+                        <div class="info">
+                            <div class="links">
+                                1000,- €
+                            </div>
+                            <div class="rechts">
+                                <button onclick="hinzufuegen('iPhone 12', 1000);">HINZUFÜGEN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>iPhone 12</span>
+                        <div class="bild">
+                            <img src="iphone.jpg">
+                        </div>
+                        <div class="info">
+                            <div class="links">
+                                1000,- €
+                            </div>
+                            <div class="rechts">
+                                <button onclick="hinzufuegen('iPhone 12', 1000);">HINZUFÜGEN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>iPhone 11</span>
+                        <div class="bild">
+                            <img src="iphone.jpg">
+                        </div>
+                        <div class="info">
+                            <div class="links">
+                                800,- €
+                            </div>
+                            <div class="rechts">
+                                <button onclick="hinzufuegen('iPhone 11', 800);">HINZUFÜGEN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>iPhone 11</span>
+                        <div class="bild">
+                            <img src="iphone.jpg">
+                        </div>
+                        <div class="info">
+                            <div class="links">
+                                800,- €
+                            </div>
+                            <div class="rechts">
+                                <button onclick="hinzufuegen('iPhone 11', 800);">HINZUFÜGEN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span>iPhone 11</span>
+                        <div class="bild">
+                            <img src="iphone.jpg">
+                        </div>
+                        <div class="info">
+                            <div class="links">
+                                800,- €
+                            </div>
+                            <div class="rechts">
+                                <button onclick="hinzufuegen('iPhone 11', 800);">HINZUFÜGEN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <h3>SHOPPING CART</h3>
+                <div id="warenkorb">
+
+                </div>
+                <div id="gesamtKosten">
+                    Gesamt:
+                </div>
+                <button onclick="kaufen();">KAUFEN</button>
+                <div id="meldung">
+
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="text.js"></script>
+</body>
+
+</html>

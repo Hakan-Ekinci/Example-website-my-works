@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #483d8b;
+    color: white;
+    font-family: "Segoe UI";
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #5645c7;
+    margin: 40px auto 0 auto;
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.container h1 {
+    margin: 0 0 20px 0;
+}
+
+.zeile {
+    display: flex;
+}
+
+.zeile>* {
+    flex-grow: 1;
+}
+
+.zeile>input {
+    padding: 5px 8px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.zeile>button {
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+.zeile>button:hover {
+    background-color: rgb(202, 60, 8);
+}
+
+.liste {
+    margin-top: 20px;
+}
+
+.liste>div {
+    padding: 6px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liste>div:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.liste i {
+    cursor: pointer;
+}
+
+.liste i:hover {
+    color: #c9c1ff;
+}

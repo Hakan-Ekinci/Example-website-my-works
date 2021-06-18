@@ -1,0 +1,27 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: "Segoe UI";
+        transition: backround-color 0.5s;
+    }
+    
+    #hintergrundText {
+        position: absolute;
+        font-size: 11em;
+        font-weight: bold;
+        opacity: 15%;
+        z-index: 0;
+    }
+    
+    #liste {
+        position: absolute;
+        z-index: 1;
+    }

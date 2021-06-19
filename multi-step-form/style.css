@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI";
+}
+
+.container {
+    width: 800px;
+    padding: 40px;
+    border: 5px solid #cccccc;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+}
+
+.form span {
+    font-size: 0.9em;
+    flex-direction: 12px;
+}
+
+.form input {
+    margin-bottom: 8px;
+    outline: none;
+    padding: 5px 8px;
+}
+
+.container h2 {
+    margin-top: 0;
+}
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    outline: none;
+    border: none;
+    padding: 10px 23px;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#schritt {
+    text-align: center;
+    font-size: 0.7em;
+    color: gray;
+    display: block;
+}
+
+#zurueck {
+    opacity: 0;
+}
+
+#gesendet {
+    display: none;
+    text-align: center;
+}

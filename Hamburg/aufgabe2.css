@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+header {
+    height: 0px;
+    background-color: #555;
+    ;
+}
+
+.content {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bild1,
+#bild2,
+#bild3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    transition: opacity 1s;
+}
+
+#bild1 {
+    background-image: url("bild1.jpg");
+}
+
+#bild2 {
+    background-image: url("bild2.jpg");
+}
+
+#bild3 {
+    background-image: url("bild3.jpg");
+}
+
+.content h1 {
+    color: rgb(214, 214, 214);
+    font-size: 3.5em;
+    position: absolute;
+    transition: opacity 1s;
+}
+
+.content button {
+    position: absolute;
+    top: 40%;
+    font-size: 2.5em;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#text2,
+#text3 {
+    opacity: 0;
+}
+
+.content button:hover {
+    background-color: rgba(68, 68, 68, 0.502);
+}
+
+#weiter {
+    right: 40px;
+}
+
+#zurueck {
+    left: 40px;
+}

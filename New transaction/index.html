@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="inputContainer">
+        <h3>Neue Transaktion</h3>
+        <input id="beschreibungInput" type="text" placeholder="Beschreibung" oninput="changeBeschreibung()">
+        <div>
+            <input id="betragInput" type="text" placeholder="Betrag" oninput="changeBetrag()">
+            <span>€</span>
+        </div>
+        <button onclick="add()">hinzufügen</button>
+    </div>
+
+    <div class="listeContainer">
+        <h3>Neue Transaktion</h3>
+        <div id="liste">
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

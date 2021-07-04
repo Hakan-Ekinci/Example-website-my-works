@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI";
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(31, 31, 83);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 16px 25px;
+    flex-grow: 1;
+}
+
+nav a:hover {
+    background-color: rgb(26, 26, 56);
+}
+
+#hamburger {
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 25px;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+        height: 54px;
+    }
+    #hamburger {
+        display: block;
+    }
+    nav a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
